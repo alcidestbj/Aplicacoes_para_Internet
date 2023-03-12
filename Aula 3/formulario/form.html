@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta content="pt-br" http-equiv="Content-Language">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>FOrmulário de exemplos</title>
+</head>
+<body>
+
+<form action="processa.php" method="post">
+	Nome: <input name="nome" type="text"><br>
+	Sexo: <input name="sexo" type="radio" checked="true"  value="M">M<input name="sexo" type="radio" value="F">F<br>
+	E-mail:<input name="email" type="text"><br>
+	Assunto:<input name="assunto" type="text"><br>
+	Curso:
+	<select name="curso">
+		<option value="TADS">Análise e Desenvolvimento de Sistemas</option>
+		<option value="CCP">Ciência da Computação</option>
+		<option value="TRC">Redes de Computadores</option>
+		<option value="TJD">Jogos Digitais</option>
+	</select><br>
+	Mensagem:<br><textarea cols="20" name="mensagem" rows="2"></textarea><br>
+	<input name="Submit1" type="submit" value="Enviar" />
+</form>
+</body>
+</html>

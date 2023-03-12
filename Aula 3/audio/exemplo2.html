@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<body>
+<audio  id="som_controle_js">
+	<source src="som de derrota.ogg" type="audio/ogg" />
+	<source src="som de derrota.mp3" type="audio/mpeg" />
+   	<source src="som de derrota.wav" type="audio/vnd.wave" /> 
+    Seu navegador não aceita a tag audio   
+</audio>
+<button id="play">Play</button> | <button id="pause">Pause</button>
+    
+<script>
+var som = document.getElementById('som_controle_js');
+document.getElementById('play').addEventListener('click', function() { som.play(); }, false);
+document.getElementById('pause').addEventListener('click', function() { som.pause(); }, false);
+</script>    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<video id="video_js" width="400px" >
+	<source src="video4.ogv" type="video/ogg"/> 
+    <source src="video4.webm" type="video/webm" /> 
+    <source src="video4.mp4" type="video/mp4" /> 
+	Seu navegador não suporta a tag de video.
+</video>
+<button id="play">Play</button>
+<button id="pause">Pause</button>
+<script>
+var video = document.getElementById('video_js');
+document.getElementById('play').addEventListener('click', function() { video.play(); }, false);
+document.getElementById('pause').addEventListener('click', function() { video.pause(); }, false);
+</script>
+</body>
+</html>

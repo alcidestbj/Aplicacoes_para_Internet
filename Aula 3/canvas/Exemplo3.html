@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+canvas{
+	border: 1px solid #F00;	
+}
+</style>
+</head>
+<body>
+<h2>Desenhando em um canvas...</h2>
+
+<canvas id="meu_canvas" width="300" height="300">
+Seu navegador não suporta a tag canvas
+</canvas>
+
+<script type="text/javascript">
+  var c=document.getElementById("meu_canvas");
+  var ctx = c.getContext('2d');
+  //retângulo vermelho preenchido:
+  ctx.fillStyle="#FF0000"; 
+  ctx.fillRect(100, 100, 150, 150);
+  //uma linha verde:
+  ctx.strokeStyle="#00FF00"; 
+  ctx.moveTo(0,0);
+  ctx.lineTo(150,150);
+  ctx.stroke();
+  //um texto azul com fonte Arial 30:
+  ctx.font = "30px Arial";
+  ctx.fillStyle="#0000FF"; 
+  ctx.fillText("Hello World",10,50);
+  //um retângulo sem preencher, cor cinza:
+  ctx.strokeStyle="#AAAAAA";
+  ctx.strokeRect(270,270,20,20); 
+  //um círculo azul no centro do canvas com largura de linha 5:
+  ctx.beginPath();
+  ctx.strokeStyle="#00FFFF";
+  ctx.lineWidth   = 5;
+  ctx.arc(150,150,40,0,2*Math.PI);
+  ctx.stroke();
+</script>
+
+</body>
+</html>

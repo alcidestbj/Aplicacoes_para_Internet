@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+canvas{
+	border: 1px solid #F00;	
+}
+</style>
+</head>
+<body>
+<canvas id="meu_canvas" width="300" height="300">
+Seu navegador não suporta a tag canvas
+</canvas>
+
+<script type="text/javascript">
+var c=document.getElementById("meu_canvas");
+var contexto = c.getContext('2d');
+contexto.fillRect(100, 100, 150, 150);
+</script>
+
+</body>
+</html>
