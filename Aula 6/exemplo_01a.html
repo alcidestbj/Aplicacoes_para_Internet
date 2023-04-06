@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplos</title>
+
+<style> 
+    /* para qualquer tag a que tenha o atributo target */
+    a[target] {
+        background-color: yellow;
+        padding: 10px;
+    }
+    
+    /* onde o valor de href termine com .com/ */
+    a[href$=".com/"]{
+        font-size: 12pt;
+        color: #f00;
+    }
+        
+     /* onde o valor de href contenha a string .br */
+    a[href*=".br"]{
+        font-size: 25pt;
+        color: #00f;    
+    }        
+    
+     /* onde o valor do atributo alt tenha a palavra exata imagem */
+    img[alt~="imagem"] {
+        border: 5px solid #f00;
+    }
+        
+    /* onde o valor do atributo src tenha a substring jpg */
+    img[src*="jpg"]{
+        border-radius: 10px;
+    }
+
+   
+</style>
+    
+</head>
+    
+<body>    
+    <h1>Exemplos</h1>
+
+    <a href="http://www.w3schools.com">W3schools</a>
+    <a href="http://www.google.com.br" target="_blank">Google</a>
+    
+    <h2> Outro exemplo</h2>
+    <img src="imagens/img1.png" alt="alguma  imagem png">
+    <img src="imagens/img2.png">
+    <br/>
+    <img src="imagens/img3.jpg" alt="imagem jpg">
+    <img src="imagens/img4.jpg">
+    
+    <h2> Mais alguns</h2>
+    <a href="http://www.amazon.com.br/">Amazon BR</a>
+    <a href="http://www.amazon.com/">Amazon En</a>
+</body>
+    
+</html>

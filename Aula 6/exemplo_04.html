@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplos</title>
+
+    <style>
+        /* fonte Verdana para o documento */
+        body {
+            font-family: verdana; 
+            font-size: 10pt;
+        }
+        
+        /* dias da semana Dom Seg Ter... */
+        table.cal {
+            color: green;
+            border-spacing: 0;
+            border: 3px solid black;
+            border-radius: 0 0 25px 25px;
+        }
+        
+        /*Altera a cor de fundo nas linhas (ímpares e pares)*/        
+        tr:nth-child(odd) { /*ímpares*/
+            background: #daf0fc;
+        }
+        
+        tr:nth-child(even) { /*pares*/
+            background: #87d5ff;
+        }
+        
+        /* altermos as bordas do primeiro e último elemento da última linha */        
+        tr:last-child>td:first-child {
+            border-radius: 0 0 0 25px;
+        }
+        
+        tr:last-child>td:last-child {
+            border-radius: 0 0 25px 0;
+        }
+        
+        /* cores de sábados e domingos: */
+        tr>td:first-child , tr>td:last-child{
+            color: #900707;
+        }
+        
+        /* cor cinza */
+        tr:first-child>td:first-child {
+            color: #b9b8b8;
+        }
+        
+        td:nth-child(even){
+            border-right: 1px solid #56c4ff;            
+            border-left: 1px solid #56c4ff;
+        }
+        
+        /* título da tabela (ABRIL 2016) com cantos arredondados */
+        .cal caption {
+            text-transform: uppercase;
+            background-color: #2a2a6f;
+            color: #ffffff;            
+            border-radius: 25px 25px 0 0;
+        }
+        
+        .cal th,
+        .cal td {
+            margin: 2px;
+            padding-bottom: 2px;            
+        }  
+        
+        th {
+            text-align: center;
+            background: #FFFFFF;
+        }
+        
+        .cal td {
+            width: 55px;
+            height: 55px;
+            vertical-align: center;
+            text-align: center;
+        }
+        
+        .feriado {           
+            background-color: #4d96d3;
+        }
+        
+        .old {            
+            background-color: #ced0d0;
+            color: #b9b8b8;            
+        }
+        
+        span {
+            display: none;
+            text-align: center;
+            color: #0e15c1;
+            font-size: 7pt;
+        }
+        
+        td:hover>span {
+            display: block;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <table class="cal">
+        <caption>Abril 2016</caption>
+        <thead>
+            <tr>
+                <th>Dom</th>
+                <th>Seg</th>
+                <th>Ter</th>
+                <th>Qua</th>
+                <th>Qui</th>
+                <th>Sex</th>
+                <th>Sab</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="old">27</td>
+                <td class="old">28</td>
+                <td class="old">29</td>
+                <td class="old">30</td>
+                <td class="old">31</td>
+                <td>1*<span>Dia da mentira</span></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14*<span>Prova parcial</span></td>
+                <td>15*<span>Prova parcial</span></td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td class="feriado">21<span>Feriado de Tiradentes</span></td>
+                <td>22*<span>Não haverá aula</span></td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

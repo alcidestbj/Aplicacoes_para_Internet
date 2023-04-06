@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplos</title>
+
+<style> 
+    #main{
+        width: 250px;        
+    }
+    
+    /* estilo do estado inicial das divs */
+    div{ 
+        /* blocos internos, inline, com altura a largura porque display:inline-block */
+        width: 100px;
+        height: 100px;
+        background-color: #fdfdeb;
+        border: 1px solid #ddfdfc;
+        display:inline-block; 
+        box-sizing: border-box;
+        color: #fdfdeb;
+        line-height: 100px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    
+    /* div que o mouse passe por cima */
+    div:hover{
+        background-color: #f0cfb2;
+        color:#f0cfb2;
+    }
+    
+    /* div que for clicada */
+    div:active{
+        background-color: #ff0e0e;
+        color: #ff0e0e;
+    }   
+    
+    /* div que ganhe o foco */
+    div:focus{
+        background-color: #000;
+        color: #fff;
+    }
+</style>
+    
+</head>
+    
+<body>  
+    
+    <section id="main">
+        <div tabindex="1">Olá mundo!!!</div>
+        <div tabindex="2">Olá 2!</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>          
+    </section>
+    
+</body>   
+    
+</html>

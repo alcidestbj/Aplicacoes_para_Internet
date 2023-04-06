@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplos</title>
+
+<style> 
+    /* para tags img em que o atributo alt contenha a palavra exata imagem */
+    img[alt~="imagem"] {
+        border: 5px solid red;
+    }
+        
+    /* para tags img em que o atributo src contenha a substring jpg */
+    img[src*="jpg"]{
+        border-radius: 25px;
+    }	
+      
+    /* que o atributo title de uma img se inicie com  a substring peque */
+    img[title^="peque"]{
+        border: 20px dotted green;
+    }
+	
+    /* que id da div se inicie com a palavra exata pequenos */
+	div[id|="pequenos"]{
+		font-size: 22pt;
+		font-family: Arial;
+		width: 200px;
+	}
+</style>
+    
+</head>
+    
+<body>    
+    <h1>Exemplos</h1>
+
+    <h2> Outros exemplos</h2>
+    <img src="imagens/img1.png" alt="alguma imagem png">
+    <img src="imagens/img2.png" alt="esta é uma imag png">
+    <br/>
+    <img src="imagens/img3.jpg" title="vacation" alt="imagem jpg">
+    <img src="imagens/img4.jpg" title="pequeno hacker">
+    
+    <h2> Mais alguns</h2>
+    <a href="http://www.amazon.com.br/">Amazon BR</a>
+    <a href="http://www.amazon.com/">Amazon En</a>
+	<br/>
+	<div id="pequenos"><br/>Um texto em Arial ajustado com largura de 200px</div>
+	<div id="peque"><br/>Um texto que não se ajusta com largura de 200px</div>
+	<br/><br/><br/>
+</body>
+    
+</html>
