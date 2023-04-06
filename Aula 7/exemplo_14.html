@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+p.pos_fixed {
+    position: fixed;
+    top: 30px;
+    right: 15px;
+    color: red;
+}
+p.pos_relative {
+    position: relative;
+    left: 20px;
+    top: 50px;
+    color: blue;
+    font-family: Calibri;
+    font-size: 16pt;
+}
+h3 {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    color: cyan;
+}
+</style>
+</head>
+<body>
+
+<p><b>Nota:</b> Em IE7 e IE8 o posicionamento fixed funciona somente se for especificado !DOCTYPE.</p>
+<p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p>
+<p class="pos_fixed">Um texto com position:fixed; top:30px; right:15px; experimento com a barra de rolagem.</p>
+<h3>Título com position:absolute; left:100px; top: 150px;</h3>
+<p class="pos_relative">Um texto com position:relative; left:20px; que será uma posição relativa ao último elemento (não absoluto,<br> nem fixed) que foi inserido, ou seja, com relação à posição normal que o elemento novo iria ocupar. Observe que este texto é movido, <br> mas sua posição original e o fluxo normal de colocação de elementos é mantido, o que poderá provocar sobreposição de elementos.</p>
+<p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p>
+<p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p>
+<p>Algum texto</p><p>Algum texto</p><p>Algum texto</p><p>Algum texto</p>
+</body>
+</html>
+

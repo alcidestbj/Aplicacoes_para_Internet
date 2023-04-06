@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+div {
+	width:500px;
+	height:500px;
+	background-color: #FFF;
+	/* Firefox  */
+	background: -moz-repeating-linear-gradient(green, red, #FF0);
+        /* Safari , Chrome  */
+        /* observe que os valores com % são os pontos onde começa uma cor (valores crescentes) 
+        e que quanto menor as percentuais maior será o número de repetições: */
+        background: -webkit-repeating-linear-gradient(top left, black, red 20%, yellow 30%);
+	/* Opera */
+	background: -o-repeating-linear-gradient(green, red, #FF0);
+	/* Explorer */
+	background: -ms-repeating-linear-gradient(green, red, #FF0);
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

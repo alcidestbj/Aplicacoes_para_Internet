@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta charset="utf-8" />
+<title>Exemplo - com div e float</title>
+    
+<style>
+    * {
+        font-family: Calibri;
+    }
+     .flutuarleft {
+         float: left; 
+         margin-right: 10px;
+         color: #00aa00; /* verde */
+     }
+     .flutuarright {
+         float: right; 
+         margin-right: 10px;
+         color: blue;
+     }
+    .limparfloat {
+        clear: both;
+    }
+</style>
+    
+</head>
+    
+<body>
+<h2>Exemplos com float</h2>
+<br>
+    
+<h3>Primeiro exemplo - elementos DIVs colocados com float:left</h3>  
+
+<div class="flutuarleft">Primeira div</div>
+<div class="flutuarleft">Segunda div</div>
+<div class="flutuarleft">Terceira div</div>
+<div class="flutuarleft">Quarta div</div>
+<div class="flutuarleft">Quinta div</div>
+<div class="flutuarleft">Sexta div</div>
+<div class="flutuarleft">Sétima div</div>
+<div class="flutuarleft">Oitava div</div>
+
+<br><br><br>
+    
+<h3>Segundo exemplo - elementos DIVs colocados com float:right</h3>  
+
+<div class="flutuarright">Primeira div</div>
+<div class="flutuarright">Segunda div</div>
+<div class="flutuarright">Terceira div</div>
+<div class="flutuarright">Quarta div</div>
+<div class="flutuarright">Quinta div</div>
+<div class="flutuarright">Sexta div</div>
+<div class="flutuarright">Sétima div</div>
+<div class="flutuarright">Oitava div</div>
+
+<br><br><br>
+    
+<h3>Terceiro exemplo - float:left</h3>  
+<p>Observe que todos flutuam até a Sexta div que 
+   limpa o efeito de flutuação com clear:both</p>
+
+<div class="flutuarleft">Primeira div</div>
+<div class="flutuarleft">Segunda div</div>
+<div class="flutuarleft">Terceira div</div>
+<div class="flutuarleft">Quarta div</div>
+<div class="flutuarleft">Quinta div</div>
+<div class="limparfloat">Sexta div</div>
+<div class="flutuarleft">Sétima div</div>
+<div class="flutuarleft">Oitava div</div>
+
+    
+</body>
+
+</html>
+

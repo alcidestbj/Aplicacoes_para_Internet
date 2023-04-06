@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+@keyframes exemplo
+{
+	from {	
+		background: red; 
+		width:100px;		
+		}
+	to {
+		background: yellow; 
+		width:500px;
+	}
+}
+
+@-moz-keyframes exemplo
+{
+	from {	
+		background: red; 
+		width:100px;		
+		}
+	to {
+		background: yellow; 
+		width:500px;
+	}
+}
+
+@-webkit-keyframes exemplo
+{
+	from {	
+		background: red; 
+		width:100px;		
+		}
+	to {
+		background: yellow; 
+		width:500px;
+	}
+}
+
+@-o-keyframes exemplo
+{
+	from {	
+		background: red; 
+		width:100px;		
+		}
+	to {
+		background: yellow; 
+		width:500px;
+	}
+}
+
+div
+{
+	width:100px;
+	height:100px;
+	background-color:#000;	
+}
+
+div:hover{
+	animation: exemplo 10s;
+	-moz-animation: exemplo 10s; /* Firefox */
+	-webkit-animation: exemplo 10s; /* Safari e Chrome */
+	-o-animation: exemplo 10s; /* Opera */	
+}
+</style>
+</head>
+
+<body>
+<div></div>
+</body>
+</html>

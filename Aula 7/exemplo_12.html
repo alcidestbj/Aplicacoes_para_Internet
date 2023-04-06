@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+@keyframes exemplo
+{
+	0% { left:0; top:0;}
+	25% { left:0; top:400px}
+	50% { left:400px; top:0}
+	75% { left:400px; top:400px}
+	100% {left:400px;top:160px}
+}
+
+@-moz-keyframes exemplo
+{
+	0% { left:0; top:0;}
+	25% { left:0; top:400px}
+	50% { left:400px; top:0}
+	75% { left:400px; top:400px}
+	100% {left:400px;top:160px}
+}
+
+@-webkit-keyframes exemplo
+{
+	0% { left:0; top:0;}
+	25% { left:0; top:400px}
+	50% { left:400px; top:0}
+	75% { left:400px; top:400px}
+	100% {left:400px;top:160px}
+}
+
+@-o-keyframes exemplo
+{
+	0% { left:0; top:0;}
+	25% { left:0; top:400px}
+	50% { left:400px; top:0}
+	75% { left:400px; top:400px}
+	100% {left:400px;top:160px}
+}
+
+div
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100px;
+	height:100px;	
+	background-color:#000;	
+	border-radius:100px;
+	color:#FFFFFF;
+	text-align:center;
+    /* Animação, baseada na keyframes 'exemplo'
+       3s será o tempo total da animação
+       2s é o tempo de espera inicial para começar
+       animação infinita e volta pelos pontos (alternate):
+    */       
+	animation: exemplo 3s linear 2s infinite alternate;
+	-moz-animation: exemplo 3s linear 2s infinite alternate; /* Firefox */
+	-webkit-animation: exemplo 3s linear 2s infinite alternate; /* Safari e Chrome */
+	-o-animation: exemplo 3s linear 2s infinite alternate; /* Opera */	
+}
+</style>
+</head>
+
+<body>
+<div>Isso <br />é <br />uma <br />DIV</div>
+</body>
+</html>

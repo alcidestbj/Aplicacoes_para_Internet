@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+
+body{
+        background-color:#ffffd2;
+        }
+    
+#tudo{
+        /* Block elements can be center-aligned by setting the left and right margins to "auto" - www.w3schools.com  */
+        margin-left: auto;
+        margin-right: auto; 
+        background-color:#99FF00;
+		width:90%;        /*se usarmos 500px não autoredimensionará a largura */
+        height:640px;     /* height:90%; não funciona */
+		}
+    
+#banner{
+		width:100%;
+		background-color:#003366;
+		color:#FFFFFF
+		}
+    
+#primeira{
+		float:right;		
+		background-color:#0033FF;
+		width:15%;
+        height:75%;
+		}		
+		
+#segunda{
+		float:right;
+		width:50%;
+        height:75%;
+		background-color:#FF0000	
+		}
+    
+#terceira{
+		float:right;
+		width:35%;	
+        height:75%;
+        color: white;
+		background-color:#660000;
+		}
+		
+#rodape{
+		clear:both;  /* Não permitir elementos flutuantes nos lados esquerdo e direito */
+		width:100%;		
+        color: white;
+		background-color:#000000;
+		}
+    
+div{
+        font-family: Verdana;
+        font-size: 16px;
+        }
+    
+</style>
+</head>
+
+<body>
+
+        <div id="tudo">  
+              <p>Div principal do site, com fundo verde, height:640px; e width:90%; usada para centralizar e manter o layout. 
+                  <br>As divs a seguir têm estilo float:right; </p>
+              <div id="banner">Banner do site</div>
+              <div id="primeira">
+                <p>Primeira área de conteúdo, com float:right; height:75%; e width:15%; com relação à div externa.</p>
+                <p>Podemos inserir textos, imagens, listas, etc.</p>
+                </div>
+              <div id="segunda">
+                <p>Segunda área de conteúdo, com float:right; altura height:75%; e width:50%; com relação à div externa.</p>
+                <p>Podemos inserir textos, imagens, listas, etc.</p>                
+              </div>
+              <div id="terceira">
+                <p>Terceira área de conteúdo, com float:right; height:75%; e width:35%; com relação à div externa.</p>
+                <p>Podemos inserir textos, imagens, listas, etc.</p>                
+              </div>
+               <div id="rodape">Rodapé do site, com width:100%;	</div>              
+        </div>
+     
+</body>
+</html>

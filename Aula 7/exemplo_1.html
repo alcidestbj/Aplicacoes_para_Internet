@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+div {
+	width:400px;
+	height:200px;
+	background-color: #FFF;
+    /* imagem de fundo, caso o browser não aceite esta característica 
+    background-image: url(images/gradiente.png);  */
+    
+	/* Firefox  */
+	background: -moz-linear-gradient(green, red, #FF0);
+	   /* Safari , Chrome  */
+       /* Observe que os valores com % são os pontos onde começa uma cor (valores crescentes), usando o ponto
+       central da faixa. Por exemplo, o centro da faixa ou gradiente da cor amarela (#FF0) está no centro da div:  */
+	   background: -webkit-linear-gradient(0deg, green, red 33%, #FF0 50%, blue 75%); 
+	/* Opera */
+	background: -o-linear-gradient(green, red, #FF0);
+	/* Explorer */
+	background: -ms-linear-gradient(green, red, #FF0);
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
